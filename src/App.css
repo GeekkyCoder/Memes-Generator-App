@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Header  */
+.Header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+  padding: 0.5em 1em;
+  justify-content: space-between;
+}
+
+.img-container {
+  width: 30%;
+}
+
+img {
+  width: 90%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.credit h4 {
+  font-weight: 500;
+}
+
+/* Header Media Query */
+@media (max-width: 500px) {
+  .Header {
+    padding: 0.5em 0.5em;
+  }
+
+  img {
+    width: 60%;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo h1 {
+    font-size: 1rem;
+  }
+
+  .credit {
+    display: none;
+  }
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top--text {
+  width: 48%;
+}
+
+.bottom--text {
+  width: 48%;
+}
+
+.btn {
+  width: 100%;
+  padding: 1em 1.2em;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #2b283a;
+}
+
+.btn:active {
+  background: linear-gradient(90deg, #672280 1.1%, #a626d3 80%);
+}
+
+.top--text,
+.bottom--text {
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid lightgrey;
+  font-family: inherit;
+}
+
+.top--text:focus,
+.bottom--text:focus {
+  outline: none;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 750px;
+  margin: 2em auto;
+}
+
+.hero--meme {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Meme  */
+.meme-section {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.top-para,
+.bottom-para {
+  position: absolute;
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 3px 3px 3px #000000;
+  letter-spacing: 2px;
+}
+
+.top-para {
+  top: 5%;
+  left: 20%;
+  max-width: 90%;
+}
+
+.bottom-para {
+  bottom: 5%;
+  left: 25%;
+  max-width: 90%;
+}
+
+.footer {
+  background-color: #2b283a;
+  padding: 1.5em;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+}
+
+.footer .github-profile {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+}
+
+.footer .github-profile:hover {
+  font-weight: 500;
+  color: white;
+}
+
+/* media queries  */
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+  }
+
+  .top--text,
+  .bottom--text {
+    width: 100%;
+  }
+
+  .top-para,
+  .bottom-para {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .top-para {
+    left: 10%;
+  }
+
+  .bottom-para {
+    left: 10%;
+  }
+
+  .footer .github-profile {
+    font-size: 1rem;
+  }
+}
