@@ -12,11 +12,10 @@
 * User can write the top and bottom line of the meme!
 
 # React features
-useState() 
 
-useEffect()
-
-Site 👉🏽 https://meme-generator-app-responsive.netlify.app/
+* useState() 
+* useEffect()
+* Site 👉🏽 https://meme-generator-app-responsive.netlify.app/
 
 
 
